@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Football predictions you can trust - guaranteed victories for your team (except Grimsby)!">
+    <meta name="keywords" content="football, predictions, fixtures, UK, rosetintedspecs">
+    <meta name="author" content="Rose Tinted Specs">
+    <title>Rose Tinted Specs - Football Predictions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⚽ Rose Tinted Specs</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Weather</a>
+                <a href="football-predictions.html" class="nav-link active">Football</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>⚽ rosetintedspecs.com ⚽</h1>
+            <p class="subtitle">Football predictions you can trust….</p>
+        </header>
+
+        <div class="input-section">
+            <div class="team-input-container">
+                <label for="teamInput">Enter your team:</label>
+                <input type="text" id="teamInput" placeholder="e.g. Manchester United, Arsenal, Selby Town FC..." autocomplete="off">
+                <button class="predict-btn" onclick="generatePredictions()">Predict Fixtures</button>
+            </div>
+            <p style="color: #e8f5e8; font-size: 0.9rem; margin-top: 10px;">
+                Get ready for a month of guaranteed glory! 🏆
+            </p>
+        </div>
+
+        <div class="predictions-container" id="predictionsContainer">
+            <div class="team-name" id="teamName"></div>
+            <div class="fixtures-grid" id="fixturesGrid"></div>
+        </div>
+    </div>
+
+    <script src="js/football.js"></script>
+</body>
+</html> 
